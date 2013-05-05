@@ -1,0 +1,20 @@
+<%-- any content can be specified here e.g.: --%>
+<%@ page pageEncoding="UTF-8" %>
+<link href="styles/style.css" rel="stylesheet" type="text/css"> 
+<link type="text/css" rel="stylesheet" href="Style/StyleSheet.css" />
+<script type="text/javascript" src="Scripts/jquery-1.6.2.min.js"></script>
+	
+<script>
+  $(document).ready(function () {
+
+    $("#divSocial a img").hover(function () {
+
+        $(this).animate({ top: "-15" });
+    }, function () {
+
+        $(this).animate({ top: "0" });
+    });
+
+      });
+
+</script>

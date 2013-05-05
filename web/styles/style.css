@@ -1,0 +1,334 @@
+
+*{
+	margin:0px;
+	padding:0px;
+}
+
+body {
+	font-family: Arial, sans-serif;  
+	/*-family: Arial, Helvetica, sans-serif;*/ 
+	 font-size: .75em;  
+	 background-image:url(../images/body.gif);
+	
+	 }
+	 
+
+
+
+/* menu  header p { margin-top: 25px; font-size: 13px; font-family: "proxima-nova-1","proxima-nova-2",sans-serif; font-style: italic; font-weight: normal; text-transform: normal; }*/
+
+
+
+#header {
+	 font-size: 13px; 
+	 font-family: Helvetica, sans-serif;
+	 /*font-family: "proxima-nova-1","proxima-nova-2",sans-serif;   */
+	/*font-style: italic;  */
+	font-weight: normal; 
+	/*text-transform: normal;  */ 
+	/*height: 127px;*/
+	background:#f3f3f3;  
+	/*background: url('img/body.gif'); */
+	
+	}
+	
+#menutop { 		/* menu principal */
+	margin: 0;
+	padding: 0;
+	background-color: #2f2f2e ;
+	}
+	
+	
+#menutop li {
+	 list-style: none;  /* enleve les points */
+	  float: right;/* apres le float on doit faire un clear fix  */
+	 color: #f3f3f3;
+	 background-color:#2f2f2e ;
+	 padding-left:5px;
+	 }
+#menutop li a:link, #nav li a:visited {    /* -- enlever le soulignement -- */
+	text-decoration: none;
+	display: block;
+	color: #f3f3f3;
+}	 
+
+#menutop a {color:#f3f3f3; font-size: 12pt; text-decoration: none; font-weight:bold;}
+#menutop a :hover {color:#db0214; }
+
+.inner-top { width:930px; margin: 0 auto; }
+.inner-top h1{  font-weight:700; font-size:50pt; color: #2f2f2e;}
+.inner-top h2{  font-weight:600; font-size:30pt; color: #2f2f2e;}
+.titre1{padding-top: 30px; width: 550px; margin:0 auto;	}
+
+
+/*-----------------------*/
+.side {
+	width: 160px;
+	background-color:#f3f3f3;
+	float:left; 
+	margin-right: 20;
+}	
+.side  li { list-style:none; padding: 4px; margin-left: 5px;}
+.grid-2 li { list-style:none; font-size:1.63em; }
+.side-inner {
+	border: solid 1px #ccc;
+	height : 700px;
+	padding: 10px;
+	
+	}
+
+#banniere { margin-top:20px; margin-bottom:4px;
+	background: url(../images/banniere3.jpg);	}
+.barh-1{ font-size:.10em; width:300px; height:3px; background: url(../images/banniere3.jpg);	}	
+/*#banniere img{ width: 910px} */
+
+.pos-g{ float:left}
+.pos-d{ float:right}
+.pos-1{ margin:20px; text-align: center;}
+
+
+
+
+
+#container{
+	/*z-index:2;*/
+
+	width: 910px;
+	margin: 0 auto;
+	padding: 20px;
+	border: solid 1px #ccc;
+	background-color:#f3f3f3;
+    
+	
+	}
+
+#principale {  margin: 6px;  background-color:white; padding: 10px;}
+#principale p {line-height: 1.6em; }
+	
+.main {
+	width: 100%;
+     height: 740px;  
+	float: left;
+	
+	
+	
+	}
+	
+.main-inner{      			  /* pour creer un espace entre les deux colonne*/
+	
+
+/* border: solid 1px #ccc; */
+
+ border: solid 1px #ff0000;
+ float:left;
+ margin-left: 6px;
+ padding: 10px;
+ width:650px;
+ 
+	
+}	
+.main-inner a {color:#f3f3f3; color: #dbdbdb; font-family: verdana; font-size:1.2em; text-decoration: none; font-weight:bold;}
+
+	
+/*-------------------------------*/
+
+
+
+
+/*----------- clearFix -----------*/
+
+.clearfix:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+	}
+.clearfix {display: inline-block;}
+/* Hides from IE-mac */
+* html .clearfix {height: 1%;}
+.clearfix {display: block;}
+/* End hide from IE-mac */
+/* @end*/
+/*----------------------------------------*/
+
+
+
+
+#footer {
+	background-color:#2f2f2e;
+	color: grey;
+	text-align: right;
+	/*font-family: Verdana; */
+	font-size: .76em;
+	/*padding : 10px ;
+	margin-top: 40px; */ 
+ width: 100%;
+ 
+margin-top: 22px;
+	height: 135px;
+
+	}
+
+.grid-1 { float: left; padding: 8px; margin: 6px;  font-size: .75em}
+.grid-2 {  padding: 10px; margin: 30px; }
+.grid-3{ float:left; padding: 3px; width: 130px;  height: 150px; background-color:green ; font-size: .85em;}
+.grid-4 {float: left; padding: 3px; width: 130px;  font-size: .75em}	
+
+
+
+.text_head {font-weight: bold; font-size: .78em; text-align: left; font-family: verdana; color: black; text-decoration:none; padding: 3px; }
+.text_1 { font-size: .56em; text-align: left; font-family: verdana; color: grey; text-decoration:none;  padding: 3px;  }
+
+.right { float: right; }
+.left { float: left;} 
+.pad1 { padding : 39 22 }
+
+
+/*            ---------------------- box  ------------------*/ 
+
+
+.box1 {
+    margin: 5px;
+	padding: 10px;
+	width : 900px;
+	min-height: 100px;
+	background-color: black;
+	
+	font-family: arial;
+	line-height: 1.6em;
+
+	}
+	
+.box2 { float: left;  
+			width: 30%; 
+			min-height: 100px; 
+			border-left: 1px solid black; 
+			padding: 10px; 
+			margin-top: 10px;
+                        background-color: beige}
+
+.box3 {	float:left;
+			width: 250px; height:110px;
+			border-left: 1px solid black; 
+			padding: 10px; 
+			margin-top: 10px;}
+.box4{
+	float:left;
+	margin-left:20px;
+	margin-top:10px;
+	border: 1px solid black;
+	}			
+			
+
+
+.couleur1 { color:white; background:black; }
+.bg1 {background-color: black; color: white;} .bg2{background-color: rgb(187, 187, 187); color: white;} .bg3{background-color: #ff9900;color: white;}
+.bg4 {background-color: #dbdbdb; color: #666;font-family: verdana; font-weight: bold; font-size:1.6em;} 
+.bg5 {background-color: #424242 ;color: #dbdbdb; font-family: verdana; font-weight: bold; font-size:1.6em;} 
+.bg6 {background-color: #efeed9;color: #bcbcbc; }
+.bg7 {background-color: #313131;color: #bcbcbc; } .bg8 {background-color: #3d3d3d;color: #bcbcbc; } .bg9{color:#db0214 }
+
+/*           FONTS ****/
+.t1 { font-size: 1.3em; font-weight: bold; color: #bcbcbc;}
+
+dd, .t2 { margin-left: 44%;text-align: left; font-family: arial; color: #bcbcbc;  } 
+dt, .t3 { text-align: left; font-family: arial;  color: black;} 
+dt { float: left;}
+dl { text-align: left;  line-height: 0.78em; }
+
+.style1{}
+
+.style1 dl {
+    margin-bottom:50px;
+}
+ 
+.style1  dl dt {
+    font-weight:bold;
+    margin-right:10px;
+    padding:5px;
+    width:100px;
+}
+ 
+.style1 dl dd {
+    margin:2px 0;
+    padding:5px 0;
+}
+
+
+.style2 { }
+
+.style2 dl {
+    margin-bottom:50px;
+}
+ 
+.style2  dl dt {
+    background:#5f9be3;
+    color:#fff;
+    float:left;
+    font-weight:bold;
+    margin-right:10px;
+    padding:5px;
+    width:100px;
+}
+ 
+.style2 dl dd {
+    margin:2px 0;
+    padding:5px 0;
+}
+
+/* div pour le mouvement des bouton avec jQuery */
+#divSocial
+		{   
+		    padding: 10px;
+		    border: 1px solid #e1e1e1;
+		    text-align: center;
+		}
+#divSocial a
+		{
+		    text-decoration: none;
+		}
+#divSocial a img
+		{
+		    position: relative;
+		    border: none;
+		    
+		}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
