@@ -30,7 +30,7 @@
 			<br/> L'endroit idéal où trouver votre cellulaire de rêve 
 			
 			</p>
-                        <p style="text-align: center;">Nous vous offrons la meilleures sélection de cellulaires des plus modernes et performant à des prix imbatable</p>
+                        <p style="text-align: center;">Nous vous offrons **-- sélection de cellulaires des plus modernes et performant à des prix imbatable</p>
 			<br/>
 			
 	
