@@ -36,7 +36,7 @@ public class SignInFB extends HttpServlet {
 
         String token = null;
         try {
-            String g = "https://graph.facebook.com/oauth/access_token?client_id=myfacebookappid&redirect_uri=" + URLEncoder.encode("http://myappengineappid.appspot.com/signin_fb.do", "UTF-8") + "&client_secret=myfacebookappsecret&code=" + code;
+            String g = "https://graph.facebook.com/oauth/access_token?client_id=293207454144373&redirect_uri=" + URLEncoder.encode("http://myappengineappid.appspot.com/signin_fb.do", "UTF-8") + "&client_secret=533dd055d3280917d59b42ee1c008c63&code=" + code;
             URL u = new URL(g);
             URLConnection c = u.openConnection();
             BufferedReader in = new BufferedReader(new InputStreamReader(c.getInputStream()));
