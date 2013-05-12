@@ -1,2 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Context antiJARLocking="true" path="/DreamSMobile"/>
+<Context antiJARLocking="true" path="/ProWayHub">
+    
+     <Resource name="jdbc/PollDatasource" 
+	    auth="Container" 
+	    type="javax.sql.DataSource"
+	    driverClassName="oracle.jdbc.driver.OracleDriver"
+	    url="jdbc:oracle:thin:@oracleadudb1.bdeb.qc.ca:1521:gdna10"
+	    username="ug283f03" 
+	    password="bbking456" 
+	    maxActive="20" 
+    maxIdle="10" maxWait="-1" />
+</Context>

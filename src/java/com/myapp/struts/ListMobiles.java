@@ -5,7 +5,8 @@
 
 package com.myapp.struts;
 
-import modele.*;
+import utils.DataManager;
+import utils.Device;
 import java.util.ArrayList;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
