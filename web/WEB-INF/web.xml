@@ -21,6 +21,12 @@
         <servlet-name>action</servlet-name>
         <url-pattern>*.do</url-pattern>
     </servlet-mapping>
+    
+   <!-- <servlet-mapping>
+        <servlet-name>SignInFB</servlet-name>
+        <url-pattern>signin_fb.do</url-pattern>
+    </servlet-mapping>
+    -->
     <session-config>
         <session-timeout>
             30
@@ -52,6 +58,8 @@
         </taglib>
     </jsp-config>
     <resource-ref>
+        
+        <!-- déclaration pour la connexion à MySql -->
     <description>my connection</description>
         <res-ref-name>jdbc/PollDatasource</res-ref-name>
         <res-type>javax.sql.DataSource</res-type>

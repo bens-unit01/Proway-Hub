@@ -2,7 +2,7 @@
  * Cette classe est inspiré du site : http://stackoverflow.com/questions/9566988/java-example-how-to-login-with-facebook-account-on-gae-using-oauth
  */
 
-package utils;
+package com.myapp.struts;
 
 /**
  *class SignInFB
@@ -26,7 +26,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-public class SignInFB extends HttpServlet {
+public class SignInFB extends org.apache.struts.action.Action {
 
     public void service(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {            
         String code = req.getParameter("code");

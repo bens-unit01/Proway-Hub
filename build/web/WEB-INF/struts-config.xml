@@ -19,6 +19,7 @@
         <forward name="welcome"  path="/Welcome.do"/>
     </global-forwards>
 
+
   <action-mappings>
             <action path="/ListMobiles" type="com.myapp.struts.ListMobiles">
                <forward name="success" path="/afficherCells.jsp"/>
@@ -32,6 +33,8 @@
             <action path="/RechercherTop10" type="com.myapp.struts.RechercherTop10">
                   <forward name="success" path="/afficherCells.jsp"/>
             </action>
+            <action path="/signin_fb" type="com.myapp.struts.SignInFB"/>
+            
           
    </action-mappings>
     
