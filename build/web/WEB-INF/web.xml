@@ -17,9 +17,19 @@
         </init-param>
         <load-on-startup>2</load-on-startup>
     </servlet>
+    
+    <servlet>
+        <servlet-name>signinfb</servlet-name>
+        <servlet-class>com.myapp.struts.SignInFB</servlet-class>
+    </servlet>
+    
     <servlet-mapping>
         <servlet-name>action</servlet-name>
         <url-pattern>*.do</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>signinfb</servlet-name>
+        <url-pattern>/signin_fb.htm</url-pattern>
     </servlet-mapping>
     
    <!-- <servlet-mapping>

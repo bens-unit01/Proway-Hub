@@ -17,7 +17,7 @@
         
        
 <%
-    String fbURL = "http://www.facebook.com/dialog/oauth?client_id=293207454144373&redirect_uri=" + URLEncoder.encode("http://localhost:8080/ProWayHub/signin_fb.do") + "&scope=email";
+    String fbURL = "http://www.facebook.com/dialog/oauth?client_id=293207454144373&redirect_uri=" + URLEncoder.encode("http://localhost:8080/ProWayHub/signin_fb.htm") + "&scope=email,read_friendlists";
 %>
 
 <a href="<%= fbURL %>"><img src="img/facebook.png" border="0" /></a>
