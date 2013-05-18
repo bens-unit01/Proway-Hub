@@ -1,5 +1,5 @@
 /*
- * 
+ * Le code de cette classe a été inspiré du site : http://stackoverflow.com/questions/9566988/java-example-how-to-login-with-facebook-account-on-gae-using-oauth
  */
 
 package com.myapp.struts;

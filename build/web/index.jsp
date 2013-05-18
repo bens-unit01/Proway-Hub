@@ -22,7 +22,10 @@
 	<div id="principale">
 			
 			
-            <a href="facebookLogin.jsp">Facebook login</a>
+            <a href="facebookLogin.jsp">Facebook login</a><br/>
+            <a href="#">liste etudiants</a><br/>
+            <a href="#">liste messages </a><br/>
+            <a href="#">liste commentaires </a><br/>
 			
 	
 		
