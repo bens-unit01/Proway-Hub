@@ -27,12 +27,16 @@
             <action path="/AfficherDetails" type="com.myapp.struts.AfficherDetails">
                 <forward name="success" path="/afficherDetails.jsp"/>
             </action>
-            <action input="/rechercher.jsp" name="RechercherActionForm" path="/Rechercher" scope="request" type="com.myapp.struts.Rechercher" validate="false">
+            <action input="/rechercher.jsp" name="RechercherActionForm" path="/Rechercher" scope="request" 
+                    type="com.myapp.struts.Rechercher" validate="false">
                 <forward name="success" path="/afficherCells.jsp"/>
             </action>
             <action path="/RechercherTop10" type="com.myapp.struts.RechercherTop10">
                   <forward name="success" path="/afficherCells.jsp"/>
             </action>
+            <action  path="/ListeUsers" scope="session" type="com.myapp.struts.ListeUsers">
+                <forward name="success" path="/listeUtilisateurs.jsp"/>
+            </action>    
             <action path="/signin_fb" type="com.myapp.struts.SignInFB"/>
             
           

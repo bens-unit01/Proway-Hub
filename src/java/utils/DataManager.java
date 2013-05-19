@@ -18,6 +18,7 @@ import javax.naming.Context;
 import javax.naming.InitialContext;
 import javax.naming.NamingException;
 import javax.sql.DataSource;
+import model.User;
 
     
 /**
@@ -30,10 +31,7 @@ public class DataManager {
     
     
     public static Connection getConnection()  {
-        String url="jdbc:oracle:thin:@oracleadudb1.bdeb.qc.ca:1521:gdna10";
-        String user="ug283f03";
-        String pwd="bbking456";
-        
+       
         
 
         Connection conn = null;
@@ -43,7 +41,7 @@ public class DataManager {
                // Class.forName("oracle.jdbc.OracleDriver");
                // conn = DriverManager.getConnection(url, user, pwd);
             Context context = new InitialContext();
-            DataSource ds = (DataSource)context.lookup("java:comp/env/jdbc/PollDatasource");
+            DataSource ds = (DataSource)context.lookup("java:comp/env/jdbc/PollDSOracle");
             conn = ds.getConnection();
            
 
@@ -78,6 +76,10 @@ public class DataManager {
             String query =  "SELECT device_id,brand, model, color, price, type FROM t_devices";
             return selectNatif(query);
         }
+    public static  ArrayList getListeUsers(){
+            String query =  "SELECT nom, prenom, email1  FROM ph_etudiants";
+            return selectNatif(query);
+        }
     public static ArrayList<Device> getListeDevices(String keyword, int index) {
         String query1 = "SELECT device_id,brand, model, color, price, type FROM t_devices where ", query2 = "";
         String lowerKeyword = keyword.toLowerCase();
@@ -94,7 +96,7 @@ public class DataManager {
     }
 
     private static ArrayList selectNatif(String query) {
-        ArrayList listeDevices = new ArrayList();
+        ArrayList listeEtudiants = new ArrayList();
        Connection conn = getConnection();
         if (conn != null) {
             
@@ -104,17 +106,16 @@ public class DataManager {
               
                 statement = conn.createStatement();
                 rs = statement.executeQuery(query);
-                Device mob;
+                User etudiant;
                 
                 while (rs.next()) {
-                    mob = new Device();
-                    mob.setDeviceId(rs.getString("device_id"));
-                    mob.setBrand(rs.getString("brand"));
-                    mob.setModel(rs.getString("model"));
-                    mob.setColor(rs.getString("color"));
-                    mob.setPrice(rs.getDouble("price"));
-                     mob.setType(rs.getString("type"));
-                    listeDevices.add(mob);
+                    etudiant = new User();
+                    etudiant.setNom(rs.getString("nom"));
+                    etudiant.setPrenom(rs.getString("prenom"));
+                    etudiant.setEmail1(rs.getString("email1"));
+                   
+                    listeEtudiants.add(etudiant);
+                    System.out.println(" DataManager etudiant:"+etudiant);
                    
                 }
  
@@ -131,7 +132,7 @@ public class DataManager {
             }
     }
     
-    return listeDevices;
+    return listeEtudiants;
     }
     public static Device getDetailsDevice(String idDevice){
     
