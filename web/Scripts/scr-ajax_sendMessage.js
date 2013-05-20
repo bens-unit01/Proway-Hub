@@ -17,21 +17,19 @@ ajaxCallRemotePage('sendMessage.do');
 
 function ajaxCallRemotePage(url) 
 { 
-    
- //alert("ajaxCallRemotePage --");	
-var iy = document.getElementById("idMessage");
-//var iy = document.getElementById("id3");
-alert(iy.value); 
-//var queryString = "id="+iy.value.toString();
+    var userId = document.getElementById("userId").value;
+ //alert("ajaxCallRemotePage --");	 
 if (window.XMLHttpRequest) 
 { 
 // Non-IE browsers       	
 req = new XMLHttpRequest();        	
 req.onreadystatechange = processStateChange;         
 req.open("POST", url, true);         
-req.setRequestHeader("If-Modified-Since", "Sat, 1 Jan 2000 00:00:00 GMT"); 
- //req.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
-req.send(null); 	
+//req.setRequestHeader("If-Modified-Since", "Sat, 1 Jan 2000 00:00:00 GMT"); 
+req.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+
+//alert("cote client "+userId);
+req.send("userId="+userId); 	
 } 	
 else if (window.ActiveXObject) 
 { 
@@ -39,8 +37,8 @@ else if (window.ActiveXObject)
 req = new ActiveXObject("Microsoft.XMLHTTP");        	
 req.onreadystatechange = processStateChange;        	
 req.open("POST", url, true);        	
-req.setRequestHeader("If-Modified-Since", "Sat, 1 Jan 2000 00:00:00 GMT"); 		
-req.send(); 	
+req.setRequestHeader("Content-type","application/x-www-form-urlencoded");
+req.send("userId="+userId); 	
 } 	
 else { 		
 return; // Navigateur non compatible 	
@@ -54,7 +52,9 @@ if (req.readyState == 4)
 if (req.status == 200) 
 { // OK response        
   // Pour le debug        
-  alert("ok:"+req.responseText);    
+  alert("ok:"+req.responseText);  
+
+document.getElementById("reponse").innerHTML =req.responseText;
    } else {         
      // Pour le debug          
      alert("Problem: " + req.statusText);     

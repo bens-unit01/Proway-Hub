@@ -22,6 +22,6 @@
     <div id="resultat"> </div>
 
         
-        
+      <script type="text/javascript" src="Scripts/scr-ajax.js"></script>  
     </body>
 </html>

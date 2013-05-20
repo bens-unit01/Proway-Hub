@@ -40,8 +40,8 @@ public class SendMessage extends org.apache.struts.action.Action {
         
         response.setContentType("text/html"); 	   
      PrintWriter out = response.getWriter(); 
-    // String idMessage = request.getParameter("idMessage");
-     out.println("SendMessage ok "); 	  
+    String userId = request.getParameter("userId");
+     out.println("userId= "+userId); 	  
      out.flush(); 
         System.out.println(" AjaxAction ok -- ");
         return null;
