@@ -24,8 +24,9 @@
 			
             <a href="facebookLogin.jsp">Facebook login</a><br/><br/>
             <a href="ListeUsers.do">liste etudiants</a><br/><br/>
-            <a href="#">liste messages </a><br/><br/>
-            <a href="#">liste commentaires </a><br/><br/>
+            <a href="newMessage.jsp">nouveau message </a><br/><br/>
+            <a href="#">nouveau commentaire </a><br/><br/>
+            <a href="test1Ajax.jsp">test ajax </a><br/><br/>
 			
 	
 		

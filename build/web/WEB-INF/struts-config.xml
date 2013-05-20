@@ -36,11 +36,17 @@
             </action>
             <action  path="/ListeUsers" scope="session" type="com.myapp.struts.ListeUsers">
                 <forward name="success" path="/listeUtilisateurs.jsp"/>
-            </action>    
+            </action>
+            
+            <action path="/ajaxAction" type="com.myapp.struts.AjaxAction"/>    
             <action path="/signin_fb" type="com.myapp.struts.SignInFB"/>
             
+            <action            path="/ajaxAction"            type="com.myapp.struts.AjaxAction" />
+            <action             path="/sendMessage"          type="com.myapp.struts.SendMessage"/>    
+</action-mappings>
+            
           
-   </action-mappings>
+  
     
     <controller processorClass="org.apache.struts.tiles.TilesRequestProcessor"/>
 
