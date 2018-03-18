@@ -24,7 +24,7 @@ Here`s the link for the source code on Github.
 At last, we need to mention that "Proway" is a fictive name but the requirements are real, you
 can check the orighinal assignement at this link.
 
-![Alt text]( /screenshots/pr001-cours.PNG?raw=true "Optional Title")
-
+![Alt text]( /screenshots/pr001-cours.PNG?raw=true "Cours")
+![Alt text]( /screenshots/pr002-messages.PNG?raw=true "Messages")
 
 
